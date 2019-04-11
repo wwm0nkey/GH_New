@@ -1,0 +1,6 @@
+Instructions:
+
+1. Import and install Playmaker.
+2. Import the "Playmaker Example.unitypackage"
+3. Open the ExamplePlaymaker scene
+4. Read the README

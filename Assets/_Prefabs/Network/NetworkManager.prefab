@@ -1,0 +1,206 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1131630692493792}
+  m_IsPrefabAsset: 1
+--- !u!1 &1131630692493792
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4155834857301982}
+  - component: {fileID: 114437361665271088}
+  - component: {fileID: 114918755979999930}
+  - component: {fileID: 114468421449500286}
+  - component: {fileID: 114673277760532370}
+  - component: {fileID: 114842681524607960}
+  m_Layer: 0
+  m_Name: NetworkManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4155834857301982
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1131630692493792}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114437361665271088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1131630692493792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57de03a5cb3f6c141858004c67b2c003, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeout: 5
+  matchmakerURL: noblewhale.com
+  matchmakerPort: 20203
+  externalIPSource: ipv4.noblewhale.com
+  servername: {fileID: 0}
+--- !u!114 &114468421449500286
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1131630692493792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1989760260, guid: 48da40995ee849c4dbfc843dd065499d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  facilitatorIP: noblewhale.com
+  facilitatorPort: 61111
+  facilitatorTimeOut: 10
+  facilitatorRetryAttempts: 3
+  portForwardingEnabled: 1
+  portForwardingTimeOut: 10
+  punchthroughTimeout: 30
+--- !u!114 &114673277760532370
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1131630692493792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70e9f18457eb9a14e8320de107c5f669, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NetworkPort: 7777
+  m_ServerBindToIP: 0
+  m_ServerBindAddress: 
+  m_NetworkAddress: localhost
+  m_DontDestroyOnLoad: 1
+  m_RunInBackground: 1
+  m_ScriptCRCCheck: 1
+  m_MaxDelay: 0.01
+  m_LogLevel: 2
+  m_PlayerPrefab: {fileID: 1407142296989104, guid: 8b59c429889f3ed4c9fbf11a2d7284fe,
+    type: 2}
+  m_AutoCreatePlayer: 1
+  m_PlayerSpawnMethod: 0
+  m_OfflineScene: LobbyTest
+  m_OnlineScene: LobbyTest
+  m_SpawnPrefabs:
+  - {fileID: 1990019419330302, guid: 7c862960ad5d25544a6461feeb54aa10, type: 2}
+  m_CustomConfig: 0
+  m_MaxConnections: 4
+  m_ConnectionConfig:
+    m_PacketSize: 1440
+    m_FragmentSize: 500
+    m_ResendTimeout: 1200
+    m_DisconnectTimeout: 2000
+    m_ConnectTimeout: 2000
+    m_MinUpdateTimeout: 10
+    m_PingTimeout: 500
+    m_ReducedPingTimeout: 100
+    m_AllCostTimeout: 20
+    m_NetworkDropThreshold: 5
+    m_OverflowDropThreshold: 5
+    m_MaxConnectionAttempt: 10
+    m_AckDelay: 33
+    m_SendDelay: 10
+    m_MaxCombinedReliableMessageSize: 100
+    m_MaxCombinedReliableMessageCount: 10
+    m_MaxSentMessageQueueSize: 512
+    m_AcksType: 1
+    m_UsePlatformSpecificProtocols: 0
+    m_InitialBandwidth: 0
+    m_BandwidthPeakFactor: 2
+    m_WebSocketReceiveBufferMaxSize: 0
+    m_UdpSocketReceiveBufferMaxSize: 0
+    m_SSLCertFilePath: 
+    m_SSLPrivateKeyFilePath: 
+    m_SSLCAFilePath: 
+    m_Channels: []
+  m_GlobalConfig:
+    m_ThreadAwakeTimeout: 1
+    m_ReactorModel: 0
+    m_ReactorMaximumReceivedMessages: 1024
+    m_ReactorMaximumSentMessages: 1024
+    m_MaxPacketSize: 2000
+    m_MaxHosts: 16
+    m_ThreadPoolSize: 1
+    m_MinTimerTimeout: 1
+    m_MaxTimerTimeout: 12000
+    m_MinNetSimulatorTimeout: 1
+    m_MaxNetSimulatorTimeout: 12000
+  m_Channels: 
+  m_UseWebSockets: 0
+  m_UseSimulator: 0
+  m_SimulatedLatency: 1
+  m_PacketLossPercentage: 0
+  m_MaxBufferedPackets: 16
+  m_AllowFragmentation: 1
+  m_MatchHost: mm.unet.unity3d.com
+  m_MatchPort: 443
+  matchName: default
+  matchSize: 8
+  isNetworkActive: 0
+  matchMaker: {fileID: 0}
+  connectDirectly: 1
+  connectPunchthrough: 1
+  connectRelay: 0
+  autoConnectToFacilitator: 1
+  useUnityMatchmaking: 0
+  externalIPSource: http://ipv4.noblewhale.com
+  externalIPv6Source: http://ipv6.noblewhale.com
+  externalIPTimeout: 10
+  clientPort: 0
+--- !u!114 &114842681524607960
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1131630692493792}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 170635eb95ab5a34793cb0a7add3a7e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matchUp: {fileID: 0}
+  networkManager: {fileID: 114673277760532370}
+  useRelays: 0
+  matchName: {fileID: 0}
+  map: {fileID: 0}
+  gametype: {fileID: 0}
+  playerPrefab: {fileID: 1407142296989104, guid: 8b59c429889f3ed4c9fbf11a2d7284fe,
+    type: 2}
+--- !u!114 &114918755979999930
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1131630692493792}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: facb388d7edb36444a88b7c19a38e56e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeout: 5
+  matchmakerURL: noblewhale.com
+  matchmakerPort: 20203
+  externalIPSource: ipv4.noblewhale.com

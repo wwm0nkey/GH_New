@@ -1,0 +1,23 @@
+RealToon V5.0.0 Update (August 2018)
+=====================================
+
+[New]
+
+*"RealToon Lite Version (Shaders)"
+- For mobile or games that only need low-end/lite features.  
+
+*"Smooth Object Normal/Ignore Object Normal (Feature)"
+- Smooth object normal for better smooth shade.
+
+*"Reduce Shadow (Feature)"
+- Reduce Real-Time shadow of an object - material without affecting other parts of an object.
+
+*"Custom Shadow Resolution (Tool)"
+- Custom shadow resolution for higher quality shadow. (Useful for Film/Animation & Illustration/Art)
+
+*"Outline Width Affected By View Distance (Feature)"
+
+*New GUI.
+*Can now fully color the shadow and maintain light falloff.
+*Can now fully use multiple lights and maintain object color and light exposure/brightness.
+*Can now disable/enable features you want or don't want to use.
